@@ -50,6 +50,9 @@ jobs:
         
     - name: Running docker image
       run: docker run -p 8086:8086 sijy28/docker-demo
+    
+      #with:
+        #context: ./web/microservices
       
       #uses: docker/build-run-action@v3
       #with:
