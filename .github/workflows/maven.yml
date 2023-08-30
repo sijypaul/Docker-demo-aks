@@ -51,11 +51,13 @@ jobs:
     - name: Running docker image
       uses: docker/build-run-action@v3
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        tags: sijy28/docker-demo
-        context: ./web/microservices
-        DOCKER_URL: localhost:8086     
+            name: Log in to Docker Hub
+            uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+            username: ${{ secrets.DOCKER_USERNAME }}
+            password: ${{ secrets.DOCKER_PASSWORD }}
+            tags: sijy28/docker-demo
+            context: ./web/microservices
+            DOCKER_URL: localhost:8086     
     
     # docker push sijy28/docker-demo
     
