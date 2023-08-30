@@ -44,11 +44,11 @@ jobs:
       uses: docker/build-push-action@v3
       with: 
         context: . 
-        #context: ./web/microservices
         push: true
         tags: sijy28/docker-demo
         labels: docker-demo
-        DOCKER_URL: "localhost:8086"
+        pull: true
+        target: "localhost:8086/web/microservices"
 
     #- name: Running docker image
      # uses: docker/build-run-action@v3
