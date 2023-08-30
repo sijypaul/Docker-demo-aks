@@ -40,5 +40,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           
-    
+    - name: Pushing Image to Docker hub
+      run: docker tag docker-demo sijy28/docker-demo
+           docker push sijy28/docker-demo
     
