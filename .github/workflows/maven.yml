@@ -48,7 +48,7 @@ jobs:
         push: true
         tags: sijy28/docker-demo
         labels: docker-demo
-        DOCKER_URL: localhost:8086
+        DOCKER_URL: "localhost:8086"
 
     #- name: Running docker image
      # uses: docker/build-run-action@v3
