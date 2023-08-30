@@ -45,7 +45,8 @@ jobs:
       with: 
         context: . 
         push: true
-        tags: docker-demo sijy28/docker-demo
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
     
     # docker push sijy28/docker-demo
     
