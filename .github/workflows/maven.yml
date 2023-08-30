@@ -48,17 +48,8 @@ jobs:
         tags: sijy28/docker-demo
         labels: docker-demo
         
-    - name: Running docker image
-      run: docker run -p 8086:8086 sijy28/docker-demo
+   # - name: Running docker image
+    #  run: docker run -p 8086:8086 sijy28/docker-demo
     
-      #with:
-        #context: ./web/microservices
       
-      #uses: docker/build-run-action@v3
-      #with:
-       # tags: sijy28/docker-demo
-        #    context: ./web/microservices
-         #   DOCKER_URL: localhost:8086     
-    
-    # docker push sijy28/docker-demo
     
