@@ -43,8 +43,8 @@ jobs:
     - name: Pushing Image to Docker hub
       uses: docker/build-push-action@v3
       with: 
-        #context: . 
-        context: ./web/microservices
+        context: . 
+        #context: ./web/microservices
         push: true
         tags: sijy28/docker-demo
         labels: docker-demo
