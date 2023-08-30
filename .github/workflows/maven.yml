@@ -47,8 +47,8 @@ jobs:
         push: true
         tags: sijy28/docker-demo
         labels: docker-demo
-        pull: true
-        target: "localhost:8086/web/microservices"
+        #pull: true
+        #target: "localhost:8086/web/microservices"
 
     #- name: Running docker image
      # uses: docker/build-run-action@v3
