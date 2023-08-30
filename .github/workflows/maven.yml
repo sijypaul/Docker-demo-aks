@@ -51,8 +51,9 @@ jobs:
     - name: Running docker image
       uses: docker/build-run-action@v3
       with:
-        enivronment:
-            DOCKER_URL= localhost:8086        
+        tags: sijy28/docker-demo
+        context: ./web/microservices
+        DOCKER_URL: localhost:8086     
     
     # docker push sijy28/docker-demo
     
