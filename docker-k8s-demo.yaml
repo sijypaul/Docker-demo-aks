@@ -8,7 +8,11 @@ spec:
   replicas: 1
   selector:
    matchLabels:
-     app: deocker-k8s-demo
+     app: docker-k8s-demo
+  template:
+   metadata:
+     labels:
+       app: docker-k8s-demo
    spec: 
      containers:
      - name: docker-k8s-demo
