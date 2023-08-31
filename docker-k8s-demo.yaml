@@ -14,4 +14,4 @@ spec:
      - name: deocker-k8s-demo
        image: Sijy28/docker-demo
        ports:
-       - containerPort: 8086
+       - containerPort: 8085
