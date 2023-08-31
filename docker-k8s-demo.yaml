@@ -11,7 +11,7 @@ spec:
      app: deocker-k8s-demo
    spec: 
      containers:
-     - name: deocker-k8s-demo
-       image: Sijy28/docker-demo
+     - name: docker-k8s-demo
+       image: sijy28/docker-demo
        ports:
        - containerPort: 8085
